@@ -1,115 +1,30 @@
-<!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Startups from IIT Kanpur</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      padding: 2rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #2c3e50;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #7f8c8d;
-      margin-top: 0.5rem;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .card img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      margin-bottom: 1rem;
-    }
-
-    .startup-name {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-      color: #2c3e50;
-    }
-
-    .tagline {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 0.75rem;
-    }
-
-    .founder {
-      font-size: 0.9rem;
-      color: #888;
-      margin-bottom: 1rem;
-    }
-
-    .learn-more {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .learn-more:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
+   <header>
+    <h1>Startups from IIT Kanpur</h1>
+    <p>Innovating the Future, One Idea at a Time</p>
+  </header>
+  <header>
 <img src="iitkstartups.png" width="1450">
+  </header>
   <section class="grid-container">
-    <!-- Example Startup Card -->
+     
     <div class="card">
       <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_1.jpg" alt="Startup Logo">
-      <div class="startup-name"> PIN Labs</div>
+      <div class="startup-name"> Pine Labs</div>
       <div class="tagline">Provider of payment solutions for businesses and merchants</div>
       <div class="founder">Founded by: Amrish Rau</div>
       <a href="https://www.pinelabs.com/" class="learn-more">Learn More</a>
     </div>
 
-    <!-- Repeat 5 more times -->
+    
     <div class="card">
       <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_2.jpg" alt="Startup Logo">
       <div class="startup-name">Ixigo</div>
@@ -167,3 +82,251 @@
   </section>
 </body>
 </html>
+  
+   -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Startups from IIT Kanpur</title>
+     <style>
+       * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+       }
+   
+       body {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         background: radial-gradient(circle at top left, #111931, #05070f);
+         color: #ffffff;
+         padding: 2rem;
+         position: relative;
+         overflow-x: hidden;
+       }
+   
+       body::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-image: linear-gradient(to right, #444 1px, transparent 1px), linear-gradient(to bottom, #444 1px, transparent 1px);
+         background-size: 60px 60px;
+         opacity: 0.1;
+         z-index: 0;
+       }
+   
+       header {
+         text-align: center;
+         margin-bottom: 2rem;
+         position: relative;
+         z-index: 1;
+       }
+   
+       header h1 {
+         font-size: 3rem;
+         background: linear-gradient(90deg, #00e0ff, #9d00ff);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         font-weight: bold;
+         animation: shine 5s infinite linear;
+       }
+   
+       @keyframes shine {
+         0% { background-position: 0%; }
+         100% { background-position: 200%; }
+       }
+   
+       header p {
+         font-size: 1.3rem;
+         color: #cfd8dc;
+         margin-top: 0.5rem;
+         font-style: italic;
+       }
+   
+       .grid-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+         gap: 2rem;
+         position: relative;
+         z-index: 1;
+       }
+   
+       .card {
+         background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+         border: 1px solid rgba(255, 255, 255, 0.1);
+         border-radius: 16px;
+         padding: 1.5rem;
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+         transition: transform 0.4s ease, box-shadow 0.4s ease;
+         backdrop-filter: blur(8px);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         position: relative;
+       }
+   
+       .card::before {
+         content: "";
+         position: absolute;
+         top: -5px;
+         left: -5px;
+         right: -5px;
+         bottom: -5px;
+         border-radius: 20px;
+         background: linear-gradient(45deg, #00e0ff, #9d00ff);
+         z-index: -1;
+         filter: blur(20px);
+         opacity: 0.2;
+       }
+   
+       .card:hover {
+         transform: translateY(-10px) scale(1.03);
+         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+       }
+   
+       .card img {
+         width: 90px;
+         height: 90px;
+         object-fit: cover;
+         margin-bottom: 1rem;
+         border-radius: 50%;
+         border: 2px solid #00e0ff;
+       }
+   
+       .startup-name {
+         font-size: 1.4rem;
+         font-weight: bold;
+         margin-bottom: 0.5rem;
+         color: #ffffff;
+       }
+   
+       .tagline {
+         font-size: 1rem;
+         color: #b0bec5;
+         margin-bottom: 0.75rem;
+         font-style: italic;
+       }
+   
+       .founder {
+         font-size: 0.9rem;
+         color: #90a4ae;
+         margin-bottom: 1rem;
+       }
+   
+       .learn-more {
+         padding: 0.5rem 1.2rem;
+         background: linear-gradient(90deg, #00e0ff, #9d00ff);
+         color: white;
+         text-decoration: none;
+         border-radius: 30px;
+         font-weight: bold;
+         transition: background 0.3s, transform 0.3s;
+       }
+   
+       .learn-more:hover {
+         transform: scale(1.05);
+         background: linear-gradient(90deg, #9d00ff, #00e0ff);
+       }
+   
+       @media (max-width: 600px) {
+         header h1 {
+           font-size: 2.2rem;
+         }
+       }
+     </style>
+   </head>
+   <body>
+     <header>
+       <h1>Startups from IIT Kanpur</h1>
+       <p>Innovating the Future, One Idea at a Time</p>
+     </header>
+     <section class="grid-container">
+     
+        <div class="card">
+          <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_1.jpg" alt="Startup Logo">
+          <div class="startup-name"> Pine Labs</div>
+          <div class="tagline">Provider of payment solutions for businesses and merchants</div>
+          <div class="founder">Founded by: Amrish Rau</div>
+          <a href="https://www.pinelabs.com/" class="learn-more">Learn More</a>
+        </div>
+    
+        
+        <div class="card">
+          <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_2.jpg" alt="Startup Logo">
+          <div class="startup-name">Ixigo</div>
+          <div class="tagline">AI-based online platform providing multiple travel services</div>
+          <div class="founder">Founded by:  Aloke Bajpai</div>
+          <a href="https://www.ixigo.com/" class="learn-more">Learn More</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://www.ecelliitk.org/Images/IITKStartups/image_4.jpg" alt="Startup Logo">
+          <div class="startup-name">NoBroker</div>
+          <div class="tagline">Provider of a listing platform for residential and commercial properties</div>
+          <div class="founder">Founded by: Amit Kumar Agarwal</div>
+          <a href="https://www.nobroker.in/" class="learn-more">Learn More</a>
+        </div>
+    
+        <div class="card">
+          <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_5.jpg" alt="Startup Logo">
+          <div class="startup-name">Rubrik</div>
+          <div class="tagline">Cloud based platform offering storage based converged data management solutions</div>
+          <div class="founder">Founded by: Bipul Sinha </div>
+          <a href=" https://www.rubrik.com/" class="learn-more">Learn More</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://www.ecelliitk.org/Images/IITKStartups/image_16.jpg" alt="Startup Logo">
+          <div class="startup-name">Sharechat</div>
+          <div class="tagline">Social platform for media sharing</div>
+          <div class="founder">Founded by: Ankush Sachdeva </div>
+          <a href="https://sharechat.com" class="learn-more">Learn More</a>
+        </div>
+    
+        <div class="card">
+          <img src="https://www.ecelliitk.org/Images/IITKStartups/image_26.jpg" alt="Startup Logo">
+          <div class="startup-name">Indigo Paints</div>
+          <div class="tagline">Manufacturer of paints</div>
+          <div class="founder">Founded by: Hemant Jalan</div>
+          <a href=" https://indigopaints.com" class="learn-more">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="https://www.ecelliitk.org/Images/IITKStartups/image_80.jpg " alt="Startup Logo">
+            <div class="startup-name">Pictory </div>
+            <div class="tagline">AI-enabled platform for the creation of videos from text </div>
+            <div class="founder">Founded by: Vikram Chalana  </div>
+            <a href="https://pictory.ai" class="learn-more">Learn More</a>
+          </div>
+      
+          <div class="card">
+            <img src="https://www.ecelliitk.org/Images/IITKStartups/image_97.jpg " alt="Startup Logo">
+            <div class="startup-name">Smart Coin</div>
+            <div class="tagline">Online marketplace for microloans</div>
+            <div class="founder">Founded by: Rohit Garg</div>
+            <a href="http://smartcoin.co.in" class="learn-more">Learn More</a>
+          </div>
+          <div class="card">
+            <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_13.jpg" alt="Startup Logo">
+            <div class="startup-name"> Moglix</div>
+            <div class="tagline">B2B marketplace platform offering industrial goods</div>
+            <div class="founder">Founded by: Rahul Garg  </div>
+            <a href=" http://moglix.com" class="learn-more">Learn More</a>
+          </div>
+      
+          <div class="card">
+            <img src=" https://www.ecelliitk.org/Images/IITKStartups/image_15.jpg " alt="Startup Logo">
+            <div class=" startup-name">Inphi </div>
+            <div class=" tagline">Provider of high-speed analog semiconductors</div>
+            <div class="founder">Founded by: Ford Tamer </div>
+            <a href=" http://inphi.com   " class="learn-more">Learn More</a>
+          </div>
+      </section>
+      
+   </body>
+   </html>
+   
